@@ -9,14 +9,13 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Set the video as the background */
-    video {
+    /* Set the video container as the background */
+    #video-container {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
       z-index: -1;
     }
 
@@ -34,11 +33,17 @@
   </style>
 </head>
 <body>
-  <!-- Video background -->
-  <video autoplay muted loop>
-    <source src="video.mp4" type="video/mp4">
-    <!-- Add other video formats if needed -->
-  </video>
+  <!-- Video background from YouTube -->
+  <div id="video-container">
+    <iframe
+      width="100%"
+      height="100%"
+      src="https://youtu.be/RMtsTeP_4n0"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
+  </div>
 
   <!-- Discord button -->
   <a class="button" href="https://discord.gg/sixteen" target="_blank">Join Discord Server</a>
